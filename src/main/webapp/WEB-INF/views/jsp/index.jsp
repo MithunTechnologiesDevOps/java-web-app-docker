@@ -40,8 +40,9 @@
 
 	<div class="row">
 		<div class="col-md-4">
-			<h2>Heading</h2>
-			<p>ABC</p>
+			<h2>Welcome To Mithun Technologies </h2>
+			<p>Contact @ +91-8296242028 ,
+					+91-9980923226</p>
 			<p>
 				<a class="btn btn-default" href="#" role="button">View details</a>
 			</p>
@@ -65,7 +66,8 @@
 
 	<hr>
 	<footer>
-		<p>&copy; Mithun Technologies 2019</p>
+		<p>&copy; Mithun Technologies 2019 Contact @ +91-8296242028 ,
+					+91-9980923226</p>
 	</footer>
 </div>
 
