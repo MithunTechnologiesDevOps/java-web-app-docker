@@ -1,8 +1,7 @@
-	
 apiVersion: v1
 kind: Service
 metadata:
-  name: javawebapp-ENVIRONMENT-svc-BUILD_NUMBER
+  name: javawebapp-svc
   namespace: default
 spec:
   type: LoadBalancer
