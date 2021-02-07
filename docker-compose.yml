@@ -1,0 +1,14 @@
+version: '2.2'
+
+services:
+   tomcat-build:
+     image: images:2
+     container_name: tom-container1
+     ports:
+       - "8080:8080"
+     volumes:
+       - volume1:/usr/local/tomcat
+     restart: always
+
+volumes:
+  volume1:
