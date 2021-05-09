@@ -5,7 +5,7 @@ node{
     }
     
     stage(" Maven Clean Package"){
-         withMaven(jdk:"JAVA_HOME", maven:'MAVEN_HOME '){
+         withMaven(jdk: 'JAVA_HOME', maven: 'MAVEN_HOME'){
          sh "mvn claen package"
          }
     } 
