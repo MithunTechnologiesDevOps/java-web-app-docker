@@ -1,26 +1,23 @@
 node{
      
     stage('SCM Checkout'){
-        git url: 'https://github.com/MithunTechnologiesDevOps/java-web-app-docker.git',branch: 'master'
+        git url: 'https://github.com/roopa99/java-web-app-docker.git',branch: 'master'
     }
     
     stage(" Maven Clean Package"){
-      def mavenHome =  tool name: "Maven-3.5.6", type: "maven"
-      def mavenCMD = "${mavenHome}/bin/mvn"
-      sh "${mavenCMD} clean package"
-      
+         withMaven(jdk: 'JAVA_HOME', maven: 'MAVEN_HOME'){
+         sh "mvn claen package"
+         }
     } 
     
     
     stage('Build Docker Image'){
-        sh 'docker build -t dockerhandson/java-web-app .'
+        sh 'docker build -t roopa45/java-web-app.'
     }
     
     stage('Push Docker Image'){
-        withCredentials([string(credentialsId: 'Docker_Hub_Pwd', variable: 'Docker_Hub_Pwd')]) {
-          sh "docker login -u dockerhandson -p ${Docker_Hub_Pwd}"
-        }
-        sh 'docker push dockerhandson/java-web-app'
+        wwithCredentials([usernameColonPassword(credentialsId: 'dockerhubroopa', variable: 'dockerhub')]) {
+        sh 'docker push roopa45/java-web-app.'
      }
      
       stage('Run Docker Image In Dev Server'){
@@ -37,4 +34,5 @@ node{
     }
      
      
+}
 }
