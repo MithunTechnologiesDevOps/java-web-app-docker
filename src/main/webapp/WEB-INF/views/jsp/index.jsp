@@ -21,7 +21,7 @@
 
 <div class="jumbotron">
 	<div class="container">
-		<h1>${title}</h1>
+		<h1>Hai</h1>
 		<p>
 			<c:if test="${not empty msg}">
 				Hello ${msg}
@@ -40,8 +40,8 @@
 
 	<div class="row">
 		<div class="col-md-8">
-			<h2>Welcome To Mithun Technologies, Marathahalli, Banglore.</h2>
-			<h3>Contact @ +91-8296242028 ,+91-9980923226</h3>
+			<h2>Welcome Sriram panchaparvala</h2>
+			<h3>Yay!! You made it</h3>
 		</div>	
 	</div>
 
