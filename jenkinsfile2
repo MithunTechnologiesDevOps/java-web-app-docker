@@ -1,0 +1,15 @@
+pipeline{
+    agentany
+    stages{
+        stage(SCM checkout){
+            steps{
+                git clone 'https://github.com/reddyvarisrinu95/javawebsrinu.git'
+            }
+        stage(build maven){
+            steps{
+                sh "/opt/apache-maven-3.8.6/bin/mvn clean package"
+            }
+        }    
+        }
+    }
+}
