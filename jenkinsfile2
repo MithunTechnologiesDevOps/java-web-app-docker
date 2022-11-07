@@ -1,0 +1,16 @@
+pipeline{
+    agentany
+    stages{
+        stage{
+            steps(checkout code){
+                git url: https://github.com/reddyvarisrinu95/javawebsrinu.git,branch: devsrinu
+            }
+        stage{
+            steps(build a code){
+                sh "mvn clean package"
+            }
+        }    
+        }
+    }
+
+}
