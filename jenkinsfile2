@@ -1,11 +1,11 @@
 pipeline{
     agentany
     stages{
-        stage{
-            steps(checkout code){
-                git url: ""https://github.com/reddyvarisrinu95/javawebsrinu.git,branch: master
+        stage(SCM checkout){
+            steps{
+                git url: 'https://github.com/reddyvarisrinu95/javawebsrinu.git',branch: 'master'
             }
-        stage{
+        stage(maven clean package){
             steps{
                 sh "mvn clean package"
             }
