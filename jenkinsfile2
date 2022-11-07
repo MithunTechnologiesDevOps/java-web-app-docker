@@ -3,11 +3,11 @@ pipeline{
     stages{
         stage(SCM checkout){
             steps{
-                git url: 'https://github.com/reddyvarisrinu95/javawebsrinu.git',branch: 'master'
+                git clone 'https://github.com/reddyvarisrinu95/javawebsrinu.git'
             }
-        stage(maven clean package){
+        stage(build maven){
             steps{
-                sh "mvn clean package"
+                sh "/opt/apache-maven-3.8.6/bin/mvn clean package"
             }
         }    
         }
