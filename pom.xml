@@ -6,7 +6,7 @@
 	<artifactId>java-web-app</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
-	
+	<!-- vinnu -->
 	<name>Maven Web Application</name>
 	<url>http://mithuntechnologies.com</url>
 	
