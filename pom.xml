@@ -119,7 +119,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<groupId>org.codehaus.mojo</groupId>
+				<groupId>org.apache.maven.plugin/</groupId>
                                 <artifactId>sonar-maven-plugin</artifactId>
 				<version>2.5.1</version>
 				<inherited>true</inherited>
