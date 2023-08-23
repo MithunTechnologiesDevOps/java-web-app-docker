@@ -119,13 +119,9 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<groupId>org.apache.maven.plugin/</groupId>
-                                <artifactId>sonar-maven-plugin</artifactId>
 				<version>2.5.1</version>
 				<inherited>true</inherited>
 				<configuration>
-					<sonar.sources>src/main/java</sonar.sources>
-                                        <sonar.exclusions>file:**/src/main/java/**/*_.*</sonar.exclusions>
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
