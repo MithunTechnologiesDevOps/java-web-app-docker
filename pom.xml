@@ -102,19 +102,21 @@
 		</dependency>
 
 	</dependencies>
-	
-	<!-- <distributionManagement>
+
+   <!-- Adding Nexus Credentials -->
+
+	 <distributionManagement>
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://13.235.8.113:8081/repository/flipkart-release/</url>
+	      <url>http://13.53.188.98:8081/repository/java-web-app-Release/</url>
 	    </repository>
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://13.235.8.113:8081/repository/flipkart-snapshot/</url>
+	      <url>http://13.53.188.98:8081/repository/java-web-app-Snapshot/</url>
 	    </snapshotRepository>
-	</distributionManagement> -->
+	</distributionManagement> 
 	
 	<build>
 		<plugins>
