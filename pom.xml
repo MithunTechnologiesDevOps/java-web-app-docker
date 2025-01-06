@@ -27,7 +27,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<!-- Adding SonarQube Properties -->
-		<sonar.host.url>http://16.16.170.21:9000/</sonar.host.url>
+		<sonar.host.url>http://13.233.166.104:9000/</sonar.host.url>
                 <sonar.login>admin</sonar.login>
 		<sonar.password>Milind@3597</sonar.password>  
 	</properties>
